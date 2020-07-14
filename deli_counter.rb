@@ -1,9 +1,7 @@
 # Deli Counter
 
-katz_deli = []
-
-def line(katz_deli)
-  if katz_deli.length >= 1 
+def line(katz_deli = [])
+  if katz_deli.length > 0
     queue = []
     counter = 1
     katz_deli.each do |name| 
@@ -24,10 +22,10 @@ end
 
 
 def now_serving(line)
-  if line.length >= 1  
+  if line.length > 0  
     puts "Currently serving #{line[0]}."
     line.shift()
-  elsif
+  else
     puts "There is nobody waiting to be served!"
   end
 end
