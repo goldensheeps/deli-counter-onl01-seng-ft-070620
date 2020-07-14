@@ -1,7 +1,7 @@
 # Deli Counter
 
 def line(katz_deli = [])
-  if katz_deli.length >= 1 
+  if katz_deli.length > 0
     queue = []
     counter = 1
     katz_deli.each do |name| 
